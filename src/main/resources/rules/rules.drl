@@ -1,0 +1,28 @@
+package rules
+
+import com.pccw.re.model.Product
+import com.pccw.re.model.Customer
+
+rule "Offer for Diamond"
+	when 
+		customerObject: Customer(type=="diamond")
+		productObject: Product()
+	then
+		productObject.setDiscount(15);
+	end
+
+rule "Offer for Silver"
+	when 
+		customerObject: Customer(type=="silver")
+		productObject: Product()
+	then
+		productObject.setDiscount(20);
+	end
+	
+rule "Offer for Gold"
+	when 
+		customerObject: Customer(type=="gold")
+		productObject: Product()
+	then
+		productObject.setDiscount(25);
+	end

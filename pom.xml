@@ -59,7 +59,7 @@
 				<artifactId>heroku-maven-plugin</artifactId>
 				<version>3.0.2</version>
 				<configuration>
-					<appName>sushi</appName>
+					<appName>re-02</appName>
 				</configuration>
 			</plugin>
 		</plugins>
